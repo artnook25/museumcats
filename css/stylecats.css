@@ -1,0 +1,215 @@
+/* CSS3 final project July 14, 2025*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 85% ;
+    background-color:#a1ced4;
+}
+
+header {
+    background-color: #d39247;
+    font-size: 120%;
+    margin-top: 10px;
+    border-style: double;
+}
+
+nav {
+    background-image: url("../images/plate_number_720._cat_galloping_2019.150.11.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 30%;
+    background-color: #855f34;
+    padding: 3%;
+    background-blend-mode:soft-light;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+}
+
+.navbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main {   
+    background-color: #d4c6a1d2;
+    font-size: 120%;
+}
+
+/* Grid for Metropolitan cats. */
+.grid-div {
+    display: grid;
+    background-color: burlywood;
+    grid-template-columns: 30% 30% 30% ;
+    justify-content: space-evenly;
+    align-items: anchor-center;
+    row-gap: 10px;
+}
+
+.grid-div img {
+    margin: 15px 5% ;
+    padding: 10px;
+    width: 80%;
+    border-style:ridge;
+    border-color: burlywood;
+    border-width: thick ;
+    border-radius: 5px;
+    /* aspect-ratio:inherit ; */
+    /* object-fit:fill; */
+    /* transition: transform 1.5s ; */
+}
+
+.grid-div img:hover {
+    background-color: antiquewhite;
+    transform: scale(1.15,1.15);
+    
+}
+
+/* Start scroll-painting on row 3, column 2, end on row 5, column 2.  */
+.tall {
+    grid-area: 3/2/5/2
+}
+
+/* Flexbox for NGA and AIC cats. */
+.flex-ngaaic {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-around;
+}
+
+.ngaaic-item {
+    margin: 15px 50px ;
+    padding: 10px;
+    height: 250px;
+    width: auto ;
+    border-style: groove;
+    border-color: antiquewhite;
+    border-width:   thick;
+    border-radius: 5px;
+    transition: background-color 1s;
+    }
+
+.ngaaic-item:hover {
+    background-color: antiquewhite;
+    transform: scale(1.15,1.15);
+}
+
+/* Title and text for NGA images. */
+.nga {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Museum label information about the work. */
+.label {
+    background-color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.8em;
+    margin: 15px auto ;
+    padding: 0px 15px;
+    border-style: double;
+    border-color: lightsteelblue;
+    border-width:medium;
+    max-width: 185px;
+    text-align: left;
+}
+
+p.title {
+    font-weight:bold;
+}
+
+footer {
+    background-color: #b98952e5;
+    text-align: center;
+    padding: 1px;
+}
+
+ul {
+    padding-top: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    align-self: center;
+    padding: 2px;
+    margin:10px;
+    background-color: #a1ced4;
+}
+
+a:link {
+    color: #0c5fbd;
+}
+
+a:visited {
+    color: #046d97;
+}
+
+a.skiplink, a.skiplink:visited {
+    color: #a1ced4;
+    position: static;
+    text-decoration: none;
+}
+
+a.skiplink:focus {
+    color: #8b4513;
+    text-decoration: none;
+    border-style: solid ;
+    border-color: #8b4513;
+    padding: 3px;
+}
+
+a.navlink {
+    background-color: #7e6345f8;
+    color: #a1ced4;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.navlink:visited {
+    color: #badce9;
+}
+
+a.navlink:hover {
+    color: #33e4fc;
+}
+
+
+li.current {
+    background-color: #a1ced4;
+    padding: 4px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: Papyrus, 'Courier New', Garamond ;
+    color: #8b4513;
+}
+
+h2 {
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-color: #a1ced49a;
+    border-width: thick;
+}
+
+/* Remove gap between first paragraph and heading for index page. */
+p.nogap {
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+p {
+    line-height: 135%;
+    padding-left: 25px;
+    padding-right: 25px;
+}

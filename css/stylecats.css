@@ -55,15 +55,12 @@ main {
     border-color: burlywood;
     border-width: thick ;
     border-radius: 5px;
-    /* aspect-ratio:inherit ; */
-    /* object-fit:fill; */
-    /* transition: transform 1.5s ; */
+    transition: background-color 1s;
 }
 
 .grid-div img:hover {
     background-color: antiquewhite;
     transform: scale(1.15,1.15);
-    
 }
 
 /* Start scroll-painting on row 3, column 2, end on row 5, column 2.  */
@@ -160,6 +157,7 @@ a.skiplink, a.skiplink:visited {
 
 a.skiplink:focus {
     color: #8b4513;
+    background-color: #e0ffff;
     text-decoration: none;
     border-style: solid ;
     border-color: #8b4513;
@@ -212,4 +210,9 @@ p {
     line-height: 135%;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+/* Selects the second paragraph */
+main > p:nth-child(2) {
+  color: #834112;
 }

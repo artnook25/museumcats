@@ -149,13 +149,13 @@ a:visited {
     color: #046d97;
 }
 
-a.skiplink, a.skiplink:visited {
-    color: #a1ced4;
-    position: static;
-    text-decoration: none;
+a.skiplink {
+    position: absolute;
+    left: -999px;
 }
 
 a.skiplink:focus {
+    position: static;
     color: #8b4513;
     font-weight: bold;
     background-color: #e0ffff;

@@ -152,6 +152,7 @@ a:visited {
 a.skiplink {
     position: absolute;
     left: -999px;
+    font-size: 120%;
 }
 
 a.skiplink:focus {

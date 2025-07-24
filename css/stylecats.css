@@ -153,13 +153,15 @@ a.skiplink {
     position: absolute;
     left: -999px;
     font-size: 120%;
+    color: #422109;
+    background-color: #e0ffff;
 }
 
 a.skiplink:focus {
     position: static;
-    color: #422109;
+    
     font-weight: bold;
-    background-color: #e0ffff;
+    
     text-decoration: none;
     border-style: solid ;
     border-color: #8b4513;

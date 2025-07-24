@@ -157,6 +157,7 @@ a.skiplink, a.skiplink:visited {
 
 a.skiplink:focus {
     color: #8b4513;
+    font-weight: bold;
     background-color: #e0ffff;
     text-decoration: none;
     border-style: solid ;
